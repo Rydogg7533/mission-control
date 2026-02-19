@@ -1,23 +1,12 @@
 'use client';
 
 import Link from 'next/link';
+import Navbar from './components/Navbar';
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white">
-      {/* Navbar */}
-      <nav className="border-b border-gray-700 bg-black/50 backdrop-blur-md sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-8 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center font-bold text-lg">
-              🎯
-            </div>
-            <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-              Mission Control
-            </h1>
-          </div>
-        </div>
-      </nav>
+      <Navbar />
 
       {/* Hero */}
       <div className="max-w-7xl mx-auto px-8 py-16">
